@@ -2,30 +2,26 @@
 
 ## 1. Project Overview
 
-This project is a personal portfolio website developed using HTML, CSS, and JavaScript.
+This project is an interactive personal portfolio website developed for Assignment 2 using HTML, CSS, and JavaScript.
 
-The website presents information about me, my programming projects, my technical skills, and a contact form. The website was designed to be responsive so that it can be viewed on desktop, tablet, and mobile screen sizes.
+The project continues the portfolio created in Assignment 1 and improves it by adding interactive project details, form validation, user feedback, and additional transitions.
 
 ---
 
 ## 2. Technologies Used
 
-The following technologies were used:
-
-- HTML5 for the structure and content of the website.
-- CSS3 for styling, colors, layouts, and responsive design.
-- JavaScript for the contact form interaction.
-- Git and GitHub for version control and project management.
-- Browser Developer Tools for testing responsive layouts.
+- HTML5 for page structure and content
+- CSS3 for styling, responsive design, and transitions
+- JavaScript for interactivity, form validation, and user feedback
+- Git and GitHub for version control
+- Browser Developer Tools for testing
 
 ---
 
 ## 3. Project Structure
 
-The project is organized using the following folder structure:
-
 ```text
-assignment-1/
+assignment-2/
 ├── README.md
 ├── index.html
 ├── css/
@@ -40,9 +36,6 @@ assignment-1/
 │ ├── ai-usage-report.md
 │ └── technical-documentation.md
 └── .gitignore
-```
-
-This structure separates the HTML, CSS, JavaScript, images, and documentation to keep the project organized.
 
 ---
 
@@ -50,11 +43,9 @@ This structure separates the HTML, CSS, JavaScript, images, and documentation to
 
 ### index.html
 
-`index.html` contains the main structure and content of the portfolio.
+Contains the main structure and content of the portfolio, including:
 
-The page includes the following sections:
-
-- Navigation Bar
+- Navigation
 - Home
 - About Me
 - Projects
@@ -62,189 +53,160 @@ The page includes the following sections:
 - Contact
 - Footer
 
-The Projects section contains information and screenshots from two previous Java projects:
+The Projects section contains two project cards with screenshots and interactive Show Details buttons.
 
-1. Pentomino Puzzle Game
-2. Clinic Management System
-
-The HTML file also links to the external CSS and JavaScript files.
+The Contact section contains a form for the user's name, email, and message.
 
 ### css/styles.css
 
-`styles.css` contains the visual design of the website.
+Contains the visual design and responsive layout of the website.
 
-It is responsible for:
+It includes:
 
-- The pastel color theme
-- Typography and spacing
-- Navigation bar layout
-- Home section styling
-- Project cards
-- Project screenshots
-- Skills cards
-- Contact form
-- Buttons and hover effects
+- Pastel color theme
 - Responsive layouts
-
-CSS Grid and Flexbox are used to organize different parts of the page.
-
-Media queries are used to adjust the layout for smaller screen sizes.
+- Project and skill cards
+- Contact form styling
+- Hover effects
+- Button transitions
+- Error and success message styling
+- Interactive project detail styling
 
 ### js/script.js
 
-`script.js` contains the JavaScript interaction used by the contact form.
+Contains the interactive behavior of the website.
 
-When the user submits the form, JavaScript:
+JavaScript is used for:
 
-1. Prevents the page from refreshing.
-2. Displays a confirmation message.
-3. Clears the form fields.
+- Showing and hiding additional project details
+- Changing button text between Show Details and Hide Details
+- Validating contact form input
+- Checking for empty fields
+- Performing basic email validation
+- Displaying error messages
+- Displaying a success message
+- Resetting the form after successful submission
 
-The confirmation message displayed is:
+---
+
+## 5. Dynamic Content
+
+Each project card includes a Show Details button.
+
+When the user clicks the button, JavaScript displays additional information about the selected project. The button text changes to Hide Details.
+
+Clicking the button again hides the information and restores the Show Details text.
+
+This feature uses JavaScript event listeners, DOM manipulation, and CSS classes.
+
+---
+
+## 6. Data Handling and Form Validation
+
+The Contact form demonstrates basic data handling using JavaScript.
+
+The form collects:
+
+- Name
+- Email
+- Message
+
+Before accepting the form, JavaScript checks that all fields contain values.
+
+The email is also checked for a basic valid format.
+
+If the input is invalid, the form displays an error message explaining what the user should correct.
+
+If the input is valid, the website displays:
 
 `Thank you! Your message has been received.`
 
-### assets/images/
-
-The `assets/images/` folder contains screenshots of the projects displayed in the portfolio.
-
-The image files are:
-
-- `pentomino-game.png`
-- `clinic-system.png`
-
-These images are referenced from `index.html`.
-
-### docs/
-
-The `docs/` directory contains the project documentation.
-
-`ai-usage-report.md` describes how ChatGPT was used during the development process and how AI suggestions were reviewed and tested.
-
-`technical-documentation.md` explains the technical structure and implementation of the portfolio.
+The form fields are then cleared.
 
 ---
 
-## 5. Website Sections
+## 7. Error Handling and User Feedback
 
-### Home
+The website provides clear feedback during form interaction.
 
-The Home section introduces me as a Computer Science student and provides a short description of my interests.
+Examples include:
 
-It also includes a link that takes the user to the Projects section.
+- An error message when required fields are empty
+- An error message when the email format is invalid
+- A success message when the form is submitted correctly
+- Different colors for error and success messages
 
-### About Me
-
-The About Me section provides additional information about my interest in programming and web development.
-
-### Projects
-
-The Projects section displays two project cards.
-
-Each card includes:
-
-- Project name
-- Screenshot
-- Short description
-- Technologies used
-
-The projects are displayed using a responsive grid layout.
-
-### Skills
-
-The Skills section displays programming and web development skills using pastel-colored cards.
-
-The skills include:
-
-- Java
-- HTML
-- CSS
-- JavaScript
-- Data Structures
-
-### Contact
-
-The Contact section contains a form with:
-
-- Name field
-- Email field
-- Message field
-- Submit button
-
-JavaScript provides feedback after the form is submitted.
+The HTML form uses `novalidate` so that the custom JavaScript validation and feedback can be displayed consistently.
 
 ---
 
-## 6. Responsive Design
+## 8. Animations and Transitions
 
-The website was designed to work on multiple screen sizes.
+CSS transitions and hover effects are used to improve the user experience.
 
-The desktop layout displays project and skill cards in multiple columns.
+Examples include:
 
-For tablet-sized screens, media queries adjust the layout so that the content fits comfortably within the available width.
+- Project card hover movement
+- Button hover effects
+- Show Details button interaction
+- Smooth visual transitions
 
-For mobile-sized screens, project and skill cards are displayed in a single column, and the navigation and spacing are adjusted for the smaller screen.
-
-The responsive design uses:
-
-- CSS Grid
-- Flexbox
-- Media queries
-- Flexible widths and spacing
+The effects are kept simple so they do not distract from the website content.
 
 ---
 
-## 7. Responsive Testing
+## 9. Responsive Design
 
-The responsive design was tested using browser Developer Tools.
+The website uses CSS Grid, Flexbox, flexible spacing, and media queries.
 
-The website was tested at different screen widths, including:
+The layout was designed for:
 
-- Desktop view
-- Tablet view at approximately 768px width
-- Mobile view at approximately 390px width
+- Desktop screens
+- Tablet screens
+- Mobile screens
 
-During testing, the Skills section initially displayed incorrectly on the mobile layout. The CSS media query was adjusted so that skill cards display in a single column on smaller screens.
-
-The Projects section, Skills section, navigation, and Contact form were checked to make sure they fit within the screen without unwanted horizontal overflow.
+On smaller screens, cards are displayed in a single column and spacing is adjusted to fit the available width.
 
 ---
 
-## 8. How to Run the Project
+## 10. Testing
 
-No installation or backend server is required to run the portfolio.
+The project was tested in a web browser and with responsive Developer Tools.
 
-To run the website:
+The following functionality was checked:
+
+- Navigation links
+- Project screenshots
+- Show Details buttons
+- Hide Details buttons
+- Contact form empty-field validation
+- Invalid email validation
+- Successful form submission
+- Error and success feedback
+- Desktop layout
+- Tablet layout
+- Mobile layout
+- Hover effects and transitions
+
+The interactive project details were tested by opening and closing the additional information for both project cards.
+
+The Contact form was tested with empty fields, an invalid email address, and valid input to verify that the correct feedback message appeared.
+
+---
+
+## 11. How to Run the Project
+
+No installation or backend server is required.
 
 1. Download or clone the repository.
 2. Open the project folder.
 3. Locate `index.html`.
 4. Open `index.html` in a modern web browser.
 
-The website can also be opened from Visual Studio Code using a local development server if available.
-
 ---
 
-## 9. Testing
+## 12. Version Control
 
-The following functionality was tested:
+Git and GitHub are used for version control.
 
-- Navigation links
-- Project layout
-- Project screenshots
-- Skills layout
-- Contact form fields
-- Contact form JavaScript interaction
-- Desktop layout
-- Tablet layout
-- Mobile layout
-
-The contact form was tested by entering values into the fields and submitting the form. The confirmation message appeared correctly, and the fields were cleared after submission.
-
----
-
-## 10. Version Control
-
-Git and GitHub were used for version control.
-
-Changes were saved using meaningful commits during development. The repository contains the source code, project images, documentation, and commit history for the assignment.
+Changes are saved using meaningful commits during development. The Assignment 2 repository contains the source code, project screenshots, documentation, and commit history.

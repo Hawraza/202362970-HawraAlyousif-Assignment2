@@ -1,75 +1,106 @@
-# AI Usage Report
+# AI Usage Report - Assignment 2
 
 ## AI Tool Used
 
-I used ChatGPT as an AI-assisted development tool while working on this portfolio assignment.
+I used ChatGPT as an AI-assisted development tool while working on Assignment 2 of my personal portfolio.
+
+The purpose of using AI was to support my learning, help me understand possible solutions, review my implementation, and improve the interactivity and usability of the portfolio.
 
 ## How I Used AI
 
+### Planning
+
+ChatGPT helped me review the Assignment 2 requirements and identify the new features that needed to be added to my existing Assignment 1 portfolio.
+
+I used the suggestions to plan the implementation of dynamic content, form validation, user feedback, and simple transitions.
+
 ### HTML
 
-ChatGPT helped me plan the structure of the portfolio and organize the content into sections such as Home, About Me, Projects, Skills, and Contact.
+ChatGPT helped me determine how to extend the existing project cards with interactive controls.
 
-It also provided suggestions for semantic HTML elements and helped me organize the project cards and contact form.
+I added Show Details buttons and additional project information to the existing project cards. The HTML structure was reviewed to make sure the JavaScript could access the correct elements.
+
+I also reviewed the contact form structure to ensure that the Name, Email, and Message fields could be validated correctly.
 
 ### CSS
 
-ChatGPT assisted me with styling the portfolio using a pastel color theme. I used its suggestions to create layouts for the navigation bar, project cards, skills cards, and contact form.
+ChatGPT provided suggestions for styling the new interactive elements while keeping the existing pastel theme of the portfolio.
 
-It also helped me use CSS Grid and Flexbox and create media queries so that the website works on desktop, tablet, and mobile screen sizes.
+I used CSS to style the Show Details buttons and hidden project information.
 
-I tested the responsive design using the browser developer tools and adjusted the CSS when some elements did not display correctly on smaller screens.
+I also added hover effects and transitions to provide visual feedback when users interact with buttons and project cards.
+
+For the contact form, I added different styles for success and error messages so that the feedback is easy to understand.
 
 ### JavaScript
 
-ChatGPT helped me implement a simple interaction for the contact form.
+ChatGPT helped me understand how to use JavaScript event listeners and DOM manipulation for the Assignment 2 features.
 
-The JavaScript prevents the form from refreshing the page, displays a confirmation message after the form is submitted, and clears the form fields.
+For the project cards, JavaScript listens for button clicks and shows or hides additional project information. The button text also changes between Show Details and Hide Details.
 
-I tested the form in the browser to make sure the interaction worked correctly.
+For the contact form, JavaScript validates the user's input before displaying a confirmation message.
 
-### Debugging
+The validation checks for empty fields and checks whether the email has a basic valid format.
 
-I used ChatGPT to help identify and solve problems during development.
+If the input is invalid, an error message is displayed. If the input is valid, a success message is displayed and the form is reset.
 
-For example, I used it to troubleshoot responsive layout issues and to understand why my JavaFX project was not running when I needed to take a screenshot for the portfolio.
+### Debugging and Testing
 
-I reviewed the error messages and changed the Java/JDK configuration after understanding the cause of the problem.
+I used ChatGPT to help review problems that appeared while adding the new features.
+
+I tested the Show Details buttons to make sure each button displayed the correct project information and could hide it again.
+
+I also tested the contact form with empty fields, an invalid email address, and valid information.
+
+When something did not work as expected, I reviewed the HTML, CSS, and JavaScript and modified the suggested solution before keeping it.
 
 ### Documentation
 
-ChatGPT also assisted me in organizing and writing the project documentation, including the README, AI usage report, and technical documentation.
+ChatGPT assisted me with organizing and improving the project documentation, including the README, AI usage report, and technical documentation.
 
-I reviewed the documentation and made sure it matched the actual structure and features of my project.
+I updated the documentation so that it describes the actual Assignment 2 features implemented in the project.
 
 ## Review and Modification of AI Suggestions
 
-I did not use AI suggestions without reviewing them first.
+I did not use AI-generated suggestions without reviewing them.
 
-I read the suggested code, added it to my project step by step, and tested the results in the browser. When a suggestion did not work as expected, I reviewed the code and modified it before keeping it in the final project.
+I added changes to the project step by step and tested them in the browser.
 
-For example, the responsive layout initially displayed multiple skill cards incorrectly on a mobile-sized screen. I tested the page using browser developer tools and adjusted the CSS media query until the cards displayed correctly in a single column.
+I reviewed the suggested HTML, CSS, and JavaScript to understand how they worked before including them in the project.
 
-I also replaced the original project image placeholders with screenshots from my actual Java projects.
+I also modified suggestions when necessary so that they matched my existing project structure, design, and Assignment 2 requirements.
+
+For example, the new interactive project details were added to my existing project cards instead of replacing the original portfolio structure.
+
+The contact form validation was also adapted to work with the form that was already created in Assignment 1.
 
 ## Benefits of Using AI
 
 Using ChatGPT helped me:
 
-- Plan the structure of the portfolio.
-- Understand how HTML, CSS, and JavaScript work together.
-- Create a responsive layout.
+- Understand how JavaScript can respond to user actions.
+- Practice DOM manipulation and event listeners.
+- Implement Show/Hide dynamic content.
+- Add form validation and user feedback.
+- Improve error handling.
+- Add simple CSS transitions and hover effects.
 - Debug problems more efficiently.
-- Improve the organization of my code and documentation.
+- Improve the organization of my documentation.
 
 ## Challenges and Limitations
 
-AI suggestions were not always correct for my project on the first attempt. Some suggestions needed to be adjusted based on my existing code and project structure.
+AI suggestions did not always match my existing project exactly.
 
-This showed me that AI-generated code should be reviewed and tested instead of being accepted automatically.
+Some suggestions needed to be adjusted to work with my existing HTML structure, CSS theme, and JavaScript.
+
+This showed me that AI-generated code should be reviewed, understood, tested, and modified instead of being accepted automatically.
 
 ## What I Learned
 
-This assignment helped me practice building a complete website using HTML, CSS, and JavaScript.
+Through Assignment 2, I learned how to make an existing website more interactive using JavaScript.
 
-I also learned how to test responsive layouts, debug code, organize project files, use Git and GitHub, and evaluate AI-generated suggestions before including them in a project.
+I practiced event listeners, DOM manipulation, form validation, error handling, user feedback, and CSS transitions.
+
+I also learned how to extend an existing project without rebuilding it from the beginning.
+
+Using AI helped support the development process, but I reviewed, tested, and modified the suggestions before including them in the final project.

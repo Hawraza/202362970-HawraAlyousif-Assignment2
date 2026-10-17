@@ -1,10 +1,10 @@
-# Personal Portfolio - Assignment 1
+# Personal Portfolio - Assignment 2
 
 ## Project Description
 
-This project is a responsive personal portfolio website created for Assignment 1.
-It introduces me as a Computer Science student and presents my projects, skills,
-and contact information.
+This project continues the personal portfolio website developed in Assignment 1.
+Assignment 2 focuses on improving interactivity and user experience using JavaScript. The portfolio includes information about me, my projects, technical skills, and a contact form.
+
 
 The portfolio was built using HTML, CSS, and JavaScript.
 
@@ -19,6 +19,43 @@ The portfolio was built using HTML, CSS, and JavaScript.
 - JavaScript contact form interaction
 - Smooth scrolling
 - Pastel responsive user interface
+
+## Assignment 2 Interactive Features
+
+### Dynamic Project Details
+
+Each project includes a **Show details** button. When the user clicks the button, additional information about the project is displayed. The button changes to **Hide Details** and allows the user to hide the information again.
+
+This feature uses JavaScript event listeners and DOM manipulation.
+
+### Contact Form Validation
+The contact form uses JavaScript to validate user input.
+
+The form checks that:
+
+- Name is not empty
+- Email is not empty
+- Message is not empty 
+- Email contains a valid basic format
+
+If the input is invalid, the user receives a clear error message.
+
+If the input is valid, a success message is displayed and the form is reset.
+
+### User Feedback
+
+The website provides clear feedback to the user:
+
+- Error messages are displayed for empty fields
+- An error message is displayed for an invalid email address 
+- A success message is displayed after valid form submission
+- Error and success messages use different colors for clarity
+
+### Animations and Transitions
+
+Simple CSS transitions and hover effects are used to improve the user experience.
+
+The project cards and interactive buttons provide visual feedback when user interacts with them.
 
 ## Projects
 
@@ -46,7 +83,7 @@ appointments, urgent cases, and visit records using different data structures.
 ## Project Structure
 
 ```text
-assignment-1/
+assignment-2/
 ├── README.md
 ├── index.html
 ├── css/
@@ -64,22 +101,27 @@ assignment-1/
 ## AI Usage
 
 ChatGPT was used as an AI-assisted development tool during this assignment.
-It was used for guidance with HTML structure, CSS styling, responsive design,
-JavaScript interaction, debugging, and documentation.
+It was used to support:
+- Planning the Assignment 2 enhancements
+- JavaScript interaction and form validation
+- Debugging and testing
+- CSS feedback and transition suggestions
+- Documentaion
 
 AI-generated suggestions were reviewed, tested, and modified before being
 included in the final project.
 
 For more details, see `docs/ai-usage-report.md`.
 
-## Additional Features
+## Improvements from Assignment 1
 
-In addition to the core assignment requirements, I added:
+Assignment 2 improves the original portfolio by adding:
+-Interactive Show/Hide project details
+- JavaScript form validation
+- Error handling for invalid user input
+- Clear success and error feedback
+- Additional transitions and interactive behavior
 
-- A Skills section to present my technical skills.
-- Real screenshots of my previous projects instead of placeholder images.
-- A custom pastel color theme for a more personalized portfolio design.
-- Hover effects and visual styling for cards and buttons.
 ## Author
 
 Hawra Alyousif

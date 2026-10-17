@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hawra | Student Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <h2 class="logo">Hawra</h2>
+
+            <ul class="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+     <section id="home" class="hero">
+        <div class="hero-content">
+            <p>Hello, I'm</p>
+            <h1>Hawra Alyousif</h1>
+            <h2>Computer Science Student</h2>
+            <p>
+                I'm interested in programming and web development, and I enjoy learning new technologies and building projects.
+            </p>
+            <a href="#projects">View my projects</a>
+        </div>
+     </section>
+
+    
+     <!-- About Me Section -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a computer science student interested in programming and web development. I'm currently learning HTML, CSS, and JavaScript while improving my skills in building web applications. I enjoy working on projects that challenge me to learn new things and improve my coding abilities.
+        </p>
+      </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="projects-container">
+
+            <!-- Project 1 -->
+            <article class="project-card">
+                <h3>Pentomino Puzzle Game</h3>
+                <div class="project-image">
+                    <img src="assets/images/pentomino-game.png"
+                        alt="Pentomino Puzzle Game Screenshot">
+                </div>
+                    
+                <p>
+                    A JavaFX puzzle game where players place and rotate Pentomino pieces on a game board before the timer ends.
+                </p>
+                <p>Java | JavaFX</p>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card">
+                <h3>Clinic Management System</h3>
+                <div class="project-image">
+                    <img src="assets/images/clinic-system.png"
+                        alt="Clinic Management System Screenshot">
+                </div>
+                <p>
+                    A Java based clinic management system for handling patient records, appointments, urgent cases, and visit records using different datastructures.
+                </p>
+                <p>Java | Data Structures</p>
+            </article>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2> My Skills </h2>
+        
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>Java</h3>
+                <p>programming and object-oriented programming</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>web page structure and content</p>
+            </div>
+            
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>styling and layout of web pages</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>basic web interactivity</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Data Structures</h3>
+                <p>applying data structures to programming problems</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me using the form below</p>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+
+            <p id="form-message"></p>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Hawra Alyousif | Student Portfolio</p>
+    </footer>
+
+    <!-- JavaScript-->
+    <script src="js/script.js"></script>
+</body>
+</html>

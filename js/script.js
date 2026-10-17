@@ -25,3 +25,20 @@ formMessage.textContent = "Thank you! Your message has been received.";
 formMessage.className = "success-message";
 contactForm.reset();
 });
+
+// Project details interaction
+const detailButtons = document.querySelectorAll(".details-btn");
+
+detailButtons.forEach(function (button) {
+button.addEventListener("click", function () {
+const details = button.nextElementSibling;
+
+details.classList.toggle("show");
+
+if (details.classList.contains("show")) {
+button.textContent = "Hide Details";
+} else {
+button.textContent = "Show Details";
+}
+});
+});

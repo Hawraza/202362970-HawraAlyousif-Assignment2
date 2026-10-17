@@ -402,6 +402,15 @@ color: var(--primary-dark);
 font-weight: bold;
 }
 
+/* Contact form feedback */
+#form-message.error-message {
+color: #b00020;
+}
+
+#form-message.success-message {
+color: #2e7d32;
+}
+
 /* =========================
 Footer
 ========================= */

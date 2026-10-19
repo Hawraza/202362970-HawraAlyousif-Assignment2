@@ -104,3 +104,23 @@ I practiced event listeners, DOM manipulation, form validation, error handling, 
 I also learned how to extend an existing project without rebuilding it from the beginning.
 
 Using AI helped support the development process, but I reviewed, tested, and modified the suggestions before including them in the final project.
+
+## AI Usage Log
+
+| Tool | Date | Purpose | Files Affected | What I Changed |
+|---|---|---|---|---|
+| ChatGPT | 2026-10-17 | Plan Assignment 2 improvements and review the existing portfolio structure | README.md, index.html, css/styles.css, js/script.js | I reviewed the suggestions and adapted them to my existing Assignment 1 portfolio. |
+| ChatGPT | 2026-10-17 | Add interactive Show/Hide project details | index.html, css/styles.css, js/script.js | I added the project detail sections, styled the buttons, tested the interaction, and adjusted the JavaScript to work with my HTML structure. |
+| ChatGPT | 2026-10-17 | Add contact form validation and user feedback | index.html, css/styles.css, js/script.js | I reviewed and modified the validation logic, added error and success feedback, and tested valid and invalid form input. |
+| ChatGPT | 2026-10-18 | Improve Assignment 2 documentation | README.md, docs/ai-usage-report.md, docs/technical-documentation.md | I reviewed the generated documentation and modified it to match the actual structure and features of my project. |
+| ChatGPT | 2026-10-18 | Debug the Show Details interaction | js/script.js | I inspected and corrected the JavaScript closing syntax, then tested both project buttons locally and on GitHub Pages. |
+| ChatGPT | 2026-10-18 | Test the deployed portfolio | GitHub Pages deployment | I tested Show Details, Hide Details, valid form submission, and invalid email validation after deployment. |
+| ChatGPT (GPT-5.6) | 2026-10-17 to 2026-10-19 | Review Assignment 2 requirements, plan and implement interactive project details, contact form validation and user feedback, debug the project, update documentation, and verify the deployed website | index.html, css/styles.css, js/script.js, README.md, docs/ai-usage-report.md, docs/technical-documentation.md | I reviewed and adapted the suggestions to my existing Assignment 1 portfolio, modified the HTML, CSS, JavaScript, and documentation as needed, and tested the project locally and on GitHub Pages. I verified the Show Details/Hide Details buttons for both projects, valid form submission, invalid email validation, success/error feedback, and the final GitHub Pages deployment. |
+
+## Declaration
+
+Name: Hawra Alyousif
+Student ID: 202362970
+Date: 2026-10-19
+
+I declare that this report and the attached evidence document all of my AI use in this assignment, with complete and unedited conversations, and that I understand and can explain all the code I submitted. I understand that undeclared AI use or a false declaration will be treated as plagiarism according to KFUPM regulations
